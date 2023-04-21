@@ -2,6 +2,17 @@
 {
     public abstract class Lightstring
     {
-        public abstract void changeState();
+        protected SimpleBulb[] bulbs;
+
+        public abstract string showState();
+
+
+        public Lightstring(int numBulbs)
+        {
+
+           bulbs = new SimpleBulb[numBulbs];
+        }
+
+
     }
 }

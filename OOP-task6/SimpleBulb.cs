@@ -6,20 +6,29 @@ using System.Threading.Tasks;
 
 namespace OOP_task6
 {
-    internal class SimpleBulb
+    public class SimpleBulb
     {
 
         private Boolean _state;
+        private readonly int _serial;
 
-        public SimpleBulb()
+        public SimpleBulb(int serial)
         {
+            _serial = serial;
             _state = false;
         }
 
-       public bool State {
+
+        public Boolean State {
+            get { return _state; }
 
             set { _state = value; }
-        
         }
+
+        public int Serial {
+            get {return _serial; }
+        }
+
+       
     }
 }

@@ -9,19 +9,19 @@ namespace OOP_task6
 
     enum ColorType
     { 
-    Red,
-    Yellow,
-    Blue,
-    Green
+    Red =1,
+    Yellow= 2 ,
+    Blue = 3,
+    Green = 0,
     }
-    public class ColoredBulb
+    public class ColoredBulb:SimpleBulb
     {
         private string _type;
-        private Boolean _state;
 
-        public ColoredBulb() {
-            _type = Enum.GetName(typeof(ColorType), 1);
-            _state = false;
+        public ColoredBulb(int serial):base(serial) {
+
+            _type = Enum.GetName(typeof(ColorType), serial%4);
+            
         }
 
         public string Type
@@ -33,13 +33,7 @@ namespace OOP_task6
 
 
         }
-
-        public bool State
-        {
-
-            set { _state = value; }
-
-        }
-
+        
+      
     }
 }
