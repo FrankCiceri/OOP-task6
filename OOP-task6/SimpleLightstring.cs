@@ -41,7 +41,7 @@ namespace OOP_task6
 
                 }
 
-                sb.Append(" Bulb is " + (currentBulb.State ? "On - " : "Off - "));
+                sb.Append("Bulb is " + (currentBulb.State ? "On - " : "Off - "));
 
             }
 

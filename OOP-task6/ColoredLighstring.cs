@@ -29,7 +29,6 @@ namespace OOP_task6
         public override string showState()
         {
             bool evenMin = DateTime.Now.Minute%2 == 0;
-            Console.WriteLine(evenMin);
             StringBuilder sb = new StringBuilder();
             ColoredBulb currentBulb;
 
